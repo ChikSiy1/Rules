@@ -1,0 +1,8 @@
+[Script]
+# > 酷安_开屏广告
+coolapk = type=http-response, pattern=^https?:\/\/api.coolapk.com\/v6\/main\/init
+# > 酷安_商品推广
+coolapk = type=http-response, pattern=^https?:\/\/api.coolapk.com\/v6\/feed\/detail
+
+[MITM]
+hostname = %APPEND% api.coolapk.com
